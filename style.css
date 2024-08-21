@@ -1,0 +1,425 @@
+@font-face {
+   font-family: Gilroy;
+   src: url(/assets/fonts/gilroy/Gilroy-Medium.ttf);
+}
+@font-face {
+   font-family: Gilroy_ExtraBold;
+   src: url(assets/fonts/gilroy/Gilroy-ExtraBold.ttf);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Gilroy;
+}
+body {
+   overflow-x: hidden;
+}
+.main {
+   max-width: 1280px;
+   width: 100%;
+   margin: 0 auto;
+   background: #f9f9f9;
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 85px 80px;
+   align-items: center;
+   height: 174px;
+   background: #fff;
+}
+.anchors {
+   display: flex;
+   gap: 50px;
+}
+.anchors a {
+   text-decoration: none;
+   color: #000;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   transition: all 0.3s ease;
+}
+.anchors a:hover {
+   color: #75bf7a;
+   transform: translateY(-3px);
+}
+
+#helpBtn {
+   width: 160px;
+   font-size: 20px;
+   font-weight: 500;
+   background-color: #75bf7a;
+   color: #fff;
+   border: none;
+   padding: 10px;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+#helpBtn:hover {
+   transform: scale(1.01);
+   filter: drop-shadow(1px 1px 10px #2d742a);
+}
+
+/*! ===============Banner Section================== */
+.bannerSection {
+   background-color: #f9f9f9;
+   padding: 80px 0;
+}
+
+.bannerContent {
+   max-width: 1280px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 80px;
+}
+
+.col1 {
+   flex: 1;
+   max-width: 50%;
+}
+
+#col1_para1 {
+   font-size: 3.18rem;
+   font-family: Gilroy_ExtraBold, sans-serif;
+   margin-bottom: 30px;
+   line-height: 1.2;
+}
+
+#col1_para2 {
+   font-size: 1.3rem;
+   line-height: 1.5;
+   color: rgba(0, 0, 0, 0.7);
+   margin-bottom: 40px;
+}
+
+.icon_btn {
+   display: flex;
+   gap: 20px;
+}
+
+.icon_btn img {
+   max-width: 180px;
+   height: auto;
+}
+
+.col2 {
+   flex: 1;
+   max-width: 50%;
+   display: flex;
+   justify-content: center;
+}
+
+.col2 img {
+   max-width: 100%;
+   height: auto;
+}
+
+.bannerSection2 {
+   display: flex;
+   background: #75bf7a;
+   height: 166px;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 80px;
+   margin-right: 80px;
+   border-radius: 10px;
+}
+
+.bannerContent1 {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 20px;
+}
+.bannerContent1 p {
+   font-size: 24px;
+   color: #fff;
+   font-weight: 500;
+   margin-left: 50px;
+}
+.bannerContent1 input {
+   width: 500px;
+   height: 67px;
+   padding-left: 30px;
+   margin-right: 10px;
+   text-align: left;
+   border-radius: 5px;
+}
+.bannerContent1 .applySection input::placeholder {
+   font-size: 20px;
+   text-align: left;
+   color: #dadada;
+}
+.applySection {
+   display: flex;
+   align-items: center;
+}
+.bannerContent1 button {
+   width: 260px;
+   height: 67px;
+   font-size: 21px;
+   background-color: black;
+   color: #fff;
+   font-weight: 900;
+   padding: 0 20px;
+   white-space: nowrap;
+   text-transform: uppercase;
+   margin-right: 30px;
+   border-radius: 5px;
+}
+
+/*! ===============How tere Work Section================== */
+#how-tere-works {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 50px 0;
+}
+
+#how-tere-works .heading {
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+#how-tere-works .heading h2 {
+   font-family: Gilroy_ExtraBold;
+   font-size: 46.49px;
+   font-weight: 800;
+   line-height: 50.35px;
+   text-align: center;
+   margin: 0 auto;
+   max-width: 80%;
+}
+.heading span {
+   color: #75bf7a;
+   font-family: Gilroy_ExtraBold;
+}
+.install-para {
+   text-align: center;
+   font-size: 24px;
+   width: 620px;
+   height: 96px;
+   margin-top: 20px;
+   font-weight: 500;
+   color: #9e9da2;
+}
+/* Table Section */
+.table_details {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   margin-right: 90px;
+   width: 1000px;
+   border-spacing: 20px;
+}
+
+.table_details td {
+   vertical-align: top;
+   padding: 10px;
+}
+
+.table_details td:first-child {
+   text-align: right;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.table_details td:last-child {
+   text-align: left;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.table_details td:nth-child(2) {
+   text-align: left;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.table_details img {
+   width: 250px;
+}
+.table_details tr p {
+   color: #9e9da2;
+   margin-top: 20px;
+   font-size: 22px;
+}
+.table_details td .td-heading {
+   font-size: 22px;
+   font-weight: 800;
+   margin-top: 20px;
+}
+.table_details td .num_logo {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   background-color: #ffffff;
+   color: #75bf7a;
+   border: 7px solid #75bf7a;
+   padding: 20px;
+   border-radius: 50%;
+   font-weight: bold;
+   font-size: 34px;
+}
+.scrollbar {
+   margin-top: 100px;
+}
+/*! ---------- Tere Benefits Section----------- */
+
+.tere_benefits-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.tere_benefits-section .heading2 p {
+   font-size: 46px;
+   color: #75bf7a;
+   font-size: 800;
+   font-family: Gilroy_ExtraBold;
+   text-transform: uppercase;
+   margin-top: 20px;
+}
+.tere_benefits-section span {
+   color: #000;
+   font-size: 800;
+   font-family: Gilroy_ExtraBold;
+}
+
+.content_box {
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 1060px;
+   height: 304px;
+   background: #fff;
+   border-radius: 10px;
+   margin-right: 50px;
+   transition: all 0.5s ease;
+}
+#box1:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+#box2:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+#box3:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+.content_box .box_col1 {
+   margin-right: 200px;
+}
+.content_box ._01_heading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+._01_heading h1 {
+   font-size: 34px;
+   font-weight: 900;
+   position: relative;
+   right: -20px;
+   top: 10px;
+}
+.box_col2 img {
+   margin-right: 20px;
+}
+.box_col1 p {
+   margin-top: 25px;
+   margin-left: 70px;
+   color: #9e9da2;
+   font-size: 22px;
+   text-align: left;
+}
+#box2 {
+   margin-left: 100px;
+   flex-direction: row-reverse;
+}
+/*! -----------Footer section---------------- */
+.footer {
+   width: 100%;
+   background: #fff;
+   margin-top: 20%;
+   padding: 20px 0;
+   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer_content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.logo_para {
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+
+.contact_info {
+   font-size: 14px;
+   line-height: 1.6;
+   color: #2c2c2c;
+}
+.contact_info p {
+   color: #8b8ba5;
+   font-size: 18px;
+   line-height: 40px;
+}
+.footer img {
+   width: 175px;
+   height: auto; /* Maintains the aspect ratio */
+}
+
+.footer_btn img {
+   width: 175px;
+   height: auto;
+   margin-left: 20px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+.footer_btn :first-child:hover {
+   transform: scale(1.1);
+}
+.footer_btn > img:hover {
+   transform: scale(1.1);
+}
+.disclaim {
+   text-align: center;
+   margin-top: 20px;
+   color: #75bf7a;
+}
+
+hr {
+   width: 100%;
+   border: 0.5px solid #e0e0e0;
+   margin: 20px 0;
+}
+
+#menuBtn {
+   display: none;
+   background: none;
+   border: none;
+   font-size: 24px;
+   cursor: pointer;
+}
