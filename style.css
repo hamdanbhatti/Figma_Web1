@@ -105,6 +105,10 @@ nav {
 .icon_btn img {
    max-width: 180px;
    height: auto;
+   transition: all .5s ease;
+}
+.icon_btn a img:hover{
+   transform: scale(1.1);
 }
 
 .col2 {
